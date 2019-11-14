@@ -1,57 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
 .app {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
-.app > * {
+.sidebar {
+  min-height: 100vh;
+  min-width: 12em;
+  width: 28%;
+  border-right: solid black 1px;
+  background: #e5fdff;
+  padding: 1em;
+}
+
+.sidebar > button {
   width: 100%;
-  text-align: center;
-  justify-content: center;
-  border-style: solid;
 }
 
-.login {
-  height: 3vw;
-  display: grid;
-  justify-content: center;
-  padding: 2vw;
+.poems-container {
+  max-width: 30em;
+  margin: auto;
 }
 
-.login-form {
-  height: 100%;
-  width: 100%
+.poems-container > div {
+  border-bottom: solid 1px grey;
+  padding-bottom: 1em;
 }
 
-
-.user-header {
-  padding: 2vw;
+.poems-container > div > button {
+  min-width: 4em;
 }
 
-.new-poem-form {
+form.new-poem-form {
+  border: solid black 1px;
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
 
-.new-poem-form > textarea {
-  height: 20vw;
+form.new-poem-form > input,
+form.new-poem-form > textarea {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
 }
 
-.new-poem-form > * {
-  padding: 1%;
-  margin: 1%;
-}
-
-.new-poem {
-  height: 30vw;
-  padding: 2vw;
-}
-
-.poems-container > * {
-  border-style: solid;
-  padding: 2vw;
-  margin: 1vw;
-}
-.poems-container {
-  padding: 2vw;
+input[type="submit"],
+button {
+  font-weight: bold;
+  font-size: 1em;
+  background: #04e8ff;
+  border: solid black 1px;
+  padding: 0.5em;
+  cursor: pointer;
 }
