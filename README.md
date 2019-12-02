@@ -28,9 +28,9 @@ When a user submit's a poem from the `NewPoemForm`, it should be posted to the A
 
 When a poem's `Mark as read` button is clicked, it should be marked as read and the button should read `Mark as unread`. Clicking it again should change it back to unread. _This does not need to be persisted in the database._ Bonus: change the background color of the button, too.
 
-## Bonus Deliverables
+## CHECKPOINT
 
-Please only attempt these if you have finished all the other deliverables and have spare time! You may want to commit your code at this point.
+Please `commit` at this point!
 
 5. Favorite poems
 
