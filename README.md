@@ -2,6 +2,8 @@
 
 Welcome to Poesy, where your poetry masterpieces come to life! Our old front-end team laid down the foundations for our app, but it looks like they forgot all the functionality! Yikes!
 
+![Demo GIF](./demo.gif)
+
 Your job will be to make our app work according to the following specifications.
 
 ## Setup instructions
