@@ -29,6 +29,7 @@ body {
 .poems-container > div {
   border-bottom: solid 1px grey;
   padding-bottom: 1em;
+  min-width: 20em;
 }
 
 .poems-container > div > button {

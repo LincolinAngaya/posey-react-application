@@ -24,7 +24,7 @@ When a user submit's a poem from the `NewPoemForm`, it should be posted to the A
 
 4. Mark poems as read
 
-When a poem's `Read` button is clicked, it should be marked as read. You can use the `color` CSS value which has been provided to you in the `Poem` component to change the text color. Clicking it again should change it back to unread (colored black). _This does not need to be persisted in the database._
+When a poem's `Mark as read` button is clicked, it should be marked as read and the button should read `Mark as unread`. Clicking it again should change it back to unread. _This does not need to be persisted in the database._ Bonus: change the background color of the button, too.
 
 ## Bonus Deliverables
 
