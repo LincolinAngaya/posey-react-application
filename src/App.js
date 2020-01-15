@@ -1,22 +1,19 @@
-import React from 'react';
-import './App.css';
-import LoginForm from './LoginForm'
-import UserHeader from './UserHeader'
-import PoemsContainer from './PoemsContainer'
-import NewPoemForm from './NewPoemForm'
+import React from "react";
+import "./App.css";
+import PoemsContainer from "./PoemsContainer";
+import NewPoemForm from "./NewPoemForm";
 
 class App extends React.Component {
-  render(){
+  render() {
     return (
       <div className="app">
         <div className="sidebar">
-          <LoginForm />
-          <UserHeader />
-          <NewPoemForm />
+          <button>Show/hide new poem form</button>
+          {false && <NewPoemForm />}
         </div>
-        <PoemsContainer/>
+        <PoemsContainer />
       </div>
-    ); 
+    );
   }
 }
 

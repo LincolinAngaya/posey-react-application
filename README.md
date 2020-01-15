@@ -1,45 +1,41 @@
-Module 4 Code Challenge: Poesy
-==============================
+# Module 4 Code Challenge: Poesy
 
 Welcome to Poesy, where your poetry masterpieces come to life! Our old front-end team laid down the foundations for our app, but it looks like they forgot all the functionality! Yikes!
+
+![Demo GIF](./demo.gif)
 
 Your job will be to make our app work according to the following specifications.
 
 ## Setup instructions
 
-Open up 2 terminals and in one, please run `json-server --watch db.json` and in the other run `npm install && npm start`. This should get your servers up and running!
+When you run `npm start` a json server will spin up and you can access the poem info at `http://localhost:3000/poems`, _and_ your react application will also start, on port 3001.
 
 ## Deliverables
 
 1. Display poems from the database
 
-Our back-end team reports that our API is good to go! Make a GET request to `http://localhost:3000/poems` to fetch poem data. Use this data to render `Poem` components in the `PoemContainer`!
+Make a GET request to `http://localhost:3000/poems` to fetch poem data. Use this data to render `Poem` components in the `PoemsContainer`!
 
-2. Log in / log out
+2. Show / hide the `NewPoemForm`
 
-Use the `LoginForm` to capture a user's username and then display this username in the `UserHeader`
+Hook up the button in the sidebar to toggle the visibility of the `NewPoemForm`.
 
-Right now we are displaying both the `LoginForm` and the `UserHeader`, but only one should be showing at any given time - `UserHeader` should only display when a user has been logged in, and `LoginForm` should only display when there is no user. Clicking the log out button on `UserHeader` should clear the user's username and cause the `LoginForm` to reappear.
+3. Create poems
 
-3. Post poems
-
-There is a form for creating poems inside `NewPoemForm`. When a user submit's a poem, it should be added to the list of poems on the right. You can use the username provided during log in to give the poem its `author` attribute. A user must not be able to do this when they are not logged in!
-
-*Note*: No persistence required - just get it to show up on the page.
+When a user submit's a poem from the `NewPoemForm`, it should be posted to the API and it should be added to the list of poems on the right.
 
 4. Mark poems as read
 
-When a poem is clicked, change the color of that poem. You can use the `color` CSS value which has been provided to you in the `Poem` component to change the color. Clicking it again should change it back to unread (colored black).
+When a poem's `Mark as read` button is clicked, it should be marked as read and the button should read `Mark as unread`. Clicking it again should change it back to unread. _This does not need to be persisted in the database._ Bonus: change the background color of the button, too.
 
-## Bonus Deliverables
-Please only attempt these if you have finished all the other deliverables and have spare time! You may want to commit your code at this point.
+## CHECKPOINT
 
-5. Poem persistence
+Please `commit` at this point!
 
-When a poem is created, persist it to the `db.json` in addition to displaying it on the page
+5. Favorite poems
 
-6. Favorite poems
+Add a second `PoemsContainer` component that will be used to display favorites. Add a "Like" button to each `Poem` component. When clicked, that poem will be added to a list of favorites and be displayed in the second `PoemContainer`.
 
-Add a second `PoemContainer` component that will be used to display favorites. Add a "Like" button to each `Poem` component. When clicked, that poem will be added to a list of favorites and be displayed in the second `PoemContainer`. 
+6. Delete poems
 
-*Note*: don't worry about styling for this!
+Add a button to the `Poem` component which will remove a poem from the page _and_ delete it from the backend.
