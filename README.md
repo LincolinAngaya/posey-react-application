@@ -24,6 +24,7 @@ The base URL for your backend is: http://localhost:6001
 These are the routes you will need:
 
 - GET `/poems`
+- POST `/poems`
 - DELETE `/poems/:id`
 
 ## Core Deliverables
