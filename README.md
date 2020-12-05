@@ -44,7 +44,7 @@ These deliverables are not required to pass the code challenge, but if you have 
 
 As a user:
 
-1. I can add a poem to my favourites and see it on a separate list.
+1. I can add a poem to my favorites and see it on a separate list.
 2. I can delete a poem and they are still gone when I refresh the page.
 
 ## Rubric
