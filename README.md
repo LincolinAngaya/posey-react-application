@@ -14,12 +14,17 @@ Your job will be to make our app work according to the user stories you will fin
 
 ## Setup
 
-1. Fork and clone this repository.
-2. Run `npm start`. This will open both your React page on port 6002 and your backend on port 6001.
+After unbundling the project:
+
+1. Run `npm install` in your terminal.
+2. Run `npm run server`. This will run your backend on port `8004`.
+3. Run `npm start`. This will run your React app on port `8000`.
+
+Make sure to open [http://localhost:8004/poems](http://localhost:8004/poems) in the browser to verify that your backend is working before you proceed!
 
 ## Endpoints
 
-The base URL for your backend is: http://localhost:6001
+The base URL for your backend is: `http://localhost:8004`
 
 These are the routes you will need:
 

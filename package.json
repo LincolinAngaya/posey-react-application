@@ -11,7 +11,8 @@
     "json-server": "^0.15.1"
   },
   "scripts": {
-    "start": "json-server --watch db.json -p 6001 & open http://localhost:6001/poems & PORT=6002 react-scripts start && fg"
+    "start": "PORT=8000 react-scripts start",
+    "server": "json-server --watch db.json -p 8004"
   },
   "eslintConfig": {
     "extends": "react-app"
