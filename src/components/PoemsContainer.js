@@ -4,7 +4,7 @@ import Poem from "./Poem";
 function PoemsContainer() {
   return (
     <div className="poems-container">
-      {/* render your Poem components in here */}
+      {/* render a list of <Poem> components in here */}
     </div>
   );
 }

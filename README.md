@@ -18,7 +18,7 @@ After unbundling the project:
 
 1. Run `npm install` in your terminal.
 2. Run `npm run server`. This will run your backend on port `8004`.
-3. Run `npm start`. This will run your React app on port `8000`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
 Make sure to open [http://localhost:8004/poems](http://localhost:8004/poems) in the browser to verify that your backend is working before you proceed!
 
@@ -51,7 +51,3 @@ As a user:
 
 1. I can add a poem to my favorites and see it on a separate list.
 2. I can delete a poem and they are still gone when I refresh the page.
-
-## Rubric
-
-You can find the rubric for this assessment [here](https://github.com/learn-co-curriculum/se-rubrics/blob/master/module-4.md).

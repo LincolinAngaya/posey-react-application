@@ -2,12 +2,12 @@ import React from "react";
 import PoemsContainer from "./PoemsContainer";
 import NewPoemForm from "./NewPoemForm";
 
-function App () {
+function App() {
   return (
     <div className="app">
       <div className="sidebar">
         <button>Show/hide new poem form</button>
-        {false && <NewPoemForm />}
+        {true ? <NewPoemForm /> : null}
       </div>
       <PoemsContainer />
     </div>
