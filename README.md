@@ -22,15 +22,7 @@ After unbundling the project:
 
 Make sure to open [http://localhost:8004/poems](http://localhost:8004/poems) in the browser to verify that your backend is working before you proceed!
 
-## Endpoints
-
 The base URL for your backend is: `http://localhost:8004`
-
-These are the routes you will need:
-
-- GET `/poems`
-- POST `/poems`
-- DELETE `/poems/:id`
 
 ## Core Deliverables
 
@@ -40,6 +32,60 @@ As a user:
 2. I can show/hide the form to create new poems.
 3. I can create poems and they are still there when I refresh the page.
 4. I can mark poems as read which will change the text of that button to "Mark as unread".
+
+### Endpoints for Core Deliverables
+
+#### GET /poems
+
+Example Response:
+
+```json
+[
+  {
+    "id": 1,
+    "title": "The Song About the Song",
+    "content": "This is the song about the show...",
+    "author": "Bryan Higgins"
+  },
+  {
+    "id": 2,
+    "title": "My Pickle",
+    "content": "...may my pickle stroll about hungry ...",
+    "author": "Jon Glass"
+  }
+]
+```
+
+#### POST `/poems`
+
+Required Headers:
+
+```js
+{
+  "Content-Type": "application/json"
+}
+```
+
+Request Object:
+
+```json
+{
+  "title": "string",
+  "content": "string",
+  "author": "string"
+}
+```
+
+Example Response:
+
+```json
+{
+  "id": 1,
+  "title": "The Song About the Song",
+  "content": "This is the song about the show...",
+  "author": "Bryan Higgins"
+}
+```
 
 ## Advanced Deliverables
 
@@ -51,3 +97,13 @@ As a user:
 
 1. I can add a poem to my favorites and see it on a separate list.
 2. I can delete a poem and they are still gone when I refresh the page.
+
+### Endpoints for Advanced Deliverables
+
+#### DELETE /poems/:id
+
+Example Response:
+
+```json
+{}
+```
